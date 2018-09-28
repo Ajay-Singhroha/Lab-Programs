@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1537785308 source:/home/hrc/Desktop/3209/Data_Structures/InfixtoPostfix/main.cpp
+	<iostream>
+	<string.h>
+	"stack.h"
+
+1537776728 /home/hrc/Desktop/3209/Data_Structures/InfixtoPostfix/stack.h
+	<iostream>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1536033711 source:/home/hrc/Desktop/3209/Data_Structures/Q_AddTwoNum/main.cpp
+	<iostream>
+	"stack.cpp"
+
+1535358179 /home/hrc/Desktop/3209/Data_Structures/Q_AddTwoNum/stack.cpp
+	<iostream>
+

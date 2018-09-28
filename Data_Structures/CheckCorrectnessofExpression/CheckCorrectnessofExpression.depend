@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1537776550 source:/home/hrc/Desktop/3209/Data_Structures/CheckCorrectnessofExpression/main.cpp
+	<iostream>
+	"stack.h"
+
+1537776728 /home/hrc/Desktop/3209/Data_Structures/CheckCorrectnessofExpression/stack.h
+	<iostream>
+

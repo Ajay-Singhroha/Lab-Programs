@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+template <class T>
+class stack
+{
+private:
+    int tos;
+    int size;
+    T arr[];
+public:
+    stack(int s)
+    {
+        tos=-1;
+        size=s;
+        for(int i=0;i<size;i++)
+        arr[s]= {0};
+    }
+    void push(T el)
+    {
+        arr[++tos]=el;
+    }
+    T pop()
+    {
+        return arr[tos--];
+    }
+    void display()
+    {
+        cout<<"\n Stack is :: ";
+        for(int i=tos; i>=0; i--)
+            cout<<"\n "<<arr[i];
+    }
+    bool checkStack_full()
+    {
+        return(tos==size-1);
+
+    }
+    bool checkStack_empty()
+    {
+        return(tos==-1);
+    }
+    int top()
+    {
+        return arr[tos];
+    }
+};
