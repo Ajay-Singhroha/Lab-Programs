@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1536855159 source:/home/hrc/Desktop/3209/OS/Fork/main.cpp
+	<iostream>
+	<stdio.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<stdlib.h>
+	<unistd.h>
+

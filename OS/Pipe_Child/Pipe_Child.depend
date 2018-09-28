@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1536904660 source:/home/hrc/Desktop/3209/OS/Pipe_Child/main.cpp
+	<sys/types.h>
+	<stdio.h>
+	<string.h>
+	<unistd.h>
+
