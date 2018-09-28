@@ -1,0 +1,110 @@
+#include <iostream>
+#include<stdlib.h>
+#include <string>
+#include <cstdlib>
+using namespace std;
+int check_no_of_ones(int arr[],int n);
+int main()
+{
+      srand(time(NULL));
+	cout<<"\n\n Parity Check\n";
+	string s;
+	cout<<"\n Enter Infomation Bits :: ";
+	cin>>s;
+	for(int i=0; i<s.length(); i++)
+	{
+		if(s[i]!=48&&s[i]!=49)
+		{
+			cout<<"\n Binary Format Reuired !! \n\n";
+			return 0;
+		}
+	}
+
+
+	int n=s.length();
+
+	int arr[n+1]= {0};
+
+	for(int i=0; i<n; i++)
+	{
+		arr[i]=s[i]-48;
+	}
+
+
+	int choice=0;
+	cout<<"\n\n   1. Odd-Parity .";
+	cout<<"\n\n   2. Even-Parity .";
+	cout<<"\n\n  Enter  your choice :: \n";
+	cin>> choice;
+
+	switch(choice)
+	{
+		case 1:
+			if(check_no_of_ones(arr,n)==1)
+				arr[n]=0;
+			else
+				arr[n]=1;
+			break;
+		case 2:
+			if(check_no_of_ones(arr,n)==0)
+				arr[n]=0;
+			else
+				arr[n]=1;
+			break;
+		default:
+			cout<<"\n Wrong Choice !! ";
+	}
+
+	if(choice<3)
+	{
+        int old=check_no_of_ones(arr,n+1);
+		cout<<"\n Sent Codeword is : ";
+		for(int i=0; i<=n; i++)
+		{
+			cout<<" "<<arr[i];
+		}
+
+		cout<<"\n\n  Error Introduced in Codeword while TRANSMISSION ";
+
+		int r=rand()%(n+1);
+
+		if(arr[r]==1)
+			arr[r]=0;
+		else
+			arr[r]=1;
+
+        int neww=check_no_of_ones(arr,n+1);
+
+		if(old==neww)
+		{
+			cout<<"\n\n  Error Not caught ! ";
+			cout<<"\n\n  Recieved code word is :: ";
+			for(int i=0; i<n+1; i++)
+				cout<<" "<<arr[i];
+		}
+		else
+		{
+			cout<<"\n\n Error Caught .\n\n";
+			cout<<"\n\n  PARITY CHANGED \n";
+			cout<<"\n\n Recieved Code Word is :: \n\n";
+			for(int i=0; i<n+1; i++)
+				cout<<" "<<arr[i];
+		}
+		cout<<endl;
+	}
+	return 0;;
+
+}
+int check_no_of_ones(int arr[],int n)
+{
+	int count=0;
+	for(int i=0; i<n; i++)
+	{
+		if(arr[i]==1)
+			count++;
+	}
+	if(count%2==0)
+		return 0;
+	else
+		return 1;
+}
