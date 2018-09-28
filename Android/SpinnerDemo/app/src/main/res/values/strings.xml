@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SpinnerDemo</string>
+    <string name="tv1">Choose State from Dropdown Menu</string>
+    <string name="tv2">Choose Districts from Dropdown Menu</string>
+    <string name="tv3"></string>
+
+    <string name="et1">Enter State Here</string>
+    <string name="et2">Enter District Here</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="button_height">72dp</dimen>
+    <dimen name="layout_width">78dp</dimen>
+    <dimen name="op_height">60dp</dimen>
+    <dimen name="tv1">88dp</dimen>
+    <dimen name="tv2">47dp</dimen>
+</resources>

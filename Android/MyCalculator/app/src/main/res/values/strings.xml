@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="ll1b1">C</string>
+    <string name="ll1b2">1</string>
+    <string name="ll1b3">4</string>
+    <string name="ll1b4">7</string>
+    <string name="ll1b5">.</string>
+
+    <string name="ll2b1">Del</string>
+    <string name="ll2b2">2</string>
+    <string name="ll2b3">5</string>
+    <string name="ll2b4">8</string>
+    <string name="ll2b5">0</string>
+
+    <string name="ll3b1"> </string>
+    <string name="ll3b2">3 </string>
+    <string name="ll3b3">6 </string>
+    <string name="ll3b4">9 </string>
+    <string name="ll3b5">  </string>
+
+    <string name="ll4b1">%</string>
+    <string name="ll4b2">/</string>
+    <string name="ll4b3">*</string>
+    <string name="ll4b4">+</string>
+    <string name="ll4b5">-</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Increment_Decrement</string>
+    <string name="text"> 00 </string>
+    <string name="button1">Increment '+'</string>
+    <string name="button2">Decrement '-'</string>
+    <string name="Reset">RESET</string>
+    <string name="EditText"> Enter Value Here </string>
+</resources>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Veg_NonVeg</string>
+
+    <string name="tv">Place Your Order </string>
+
+    <string name="veg">Vegeterian Food</string>
+    <string name="nonveg">NON-Vegeterian Food</string>
+    <string name="b">ORDER</string>
+    <string name="v1"> Paneer Masala\n ₹ 250</string>
+    <string name="v2">Matar Paneer\n ₹ 280</string>
+    <string name="v3">Paneer Tikka\n ₹ 180</string>
+    <string name="v4">Butter Naan\n ₹ 270</string>
+    <string name="v5">Special Thali\n ₹ 320</string>
+    <string name="v6">Punjabi Thali\n ₹ 290</string>
+    <string name="v7">Kadhai Paneer\n ₹ 220</string>
+    <string name="v8">Aloo ka Parantha\n ₹ 120</string>
+
+    <string name="n1">Butter Chicken\n ₹ 490</string>
+    <string name="n2">Mutton Curry\n ₹ 189</string>
+    <string name="n3">Fish Biryani\n ₹ 356</string>
+    <string name="n4">Chicken Tikka\n ₹ 230</string>
+    <string name="n5">Egg Curry\n ₹ 120</string>
+    <string name="n6">Chicken korma\n ₹ 410</string>
+    <string name="n7">Fried Fish\n ₹ 390</string>
+    <string name="n8">Mutton Biryani\n ₹ 150</string>
+
+</resources>

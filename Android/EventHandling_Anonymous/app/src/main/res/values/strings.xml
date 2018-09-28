@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EventHandling_Anonymous</string>
+    <string name="text"> Change Color Using Buttons</string>
+    <string name="btn1">Background Color Change</string>
+    <string name="btn2">Foreground Color Change</string>
+    <string name="back">BackGround Color Change</string>
+    <string name="fore">ForeGround Color Changed</string>
+</resources>

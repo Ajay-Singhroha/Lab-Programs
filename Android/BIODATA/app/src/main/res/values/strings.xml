@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BIO-DATA</string>
+    <string name="personal">Personal Details</string>
+
+    <string name="PersonalQues">Name            :\n
+                                Contact  :\n
+                                Date of Birth   :\n
+                                Father\'s Name  :\n
+                                Nationality     : \n
+                                Religion        : \n
+                                \n
+                                Address\t\t     :
+ </string>
+    <string name="PersonalAns">  Ajay    \n
+                                +91 8899......\n
+                                10 ........... \n
+                                Bijender  \n
+                                Indian   \n
+                                Hindu     \n
+                                \nHouse No. _ , Block =  _  ,
+                                \nCity ______, State ______ .
+                                \nZip Code ______\n
+
+ </string>
+
+    <string name="academicQA">Pursuing : Bachelor of Computer Science (Hons.)
+                                         \n Hansraj College , University of Delhi .
+                                         </string>
+    <string name="academic">Academic Qualifications</string>
+    <string name="academicA">Passed High School CBSE Board Examination from \n DSVN Sr. Sec. School , Gurugram ,Haryana </string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="79dp"
+        android:layout_height="411dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ll1b1"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll1b1" />
+
+        <Button
+            android:id="@+id/ll1b2"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll1b2" />
+
+        <Button
+            android:id="@+id/ll1b3"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll1b3" />
+
+        <Button
+            android:id="@+id/ll1b4"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll1b4" />
+
+        <Button
+            android:id="@+id/ll1b5"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll1b5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="79dp"
+        android:layout_height="411dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ll2b1"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="?android:color"
+
+            android:text="@string/ll2b1" />
+
+        <Button
+            android:id="@+id/ll2b2"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll2b2" />
+
+        <Button
+            android:id="@+id/ll2b3"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll2b3" />
+
+        <Button
+            android:id="@+id/ll2b4"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+
+            android:background="?android:color"
+            android:text="@string/ll2b4" />
+
+        <Button
+            android:id="@+id/ll2b5"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+
+            android:background="?android:color"
+            android:text="@string/ll2b5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="83dp"
+        android:layout_height="411dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="111dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ll3b1"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="?android:color"
+            android:text="@string/ll3b1" />
+
+        <Button
+            android:id="@+id/ll3b2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll3b2" />
+
+        <Button
+            android:id="@+id/ll3b3"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+
+            android:background="?android:color"
+            android:text="@string/ll3b3" />
+
+        <Button
+            android:id="@+id/ll3b4"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+
+            android:background="?android:color"
+            android:text="@string/ll3b4" />
+
+        <Button
+            android:id="@+id/ll3b5"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll3b5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="411dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ll4b1"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="?android:color"
+            android:text="@string/ll4b1" />
+
+        <Button
+            android:id="@+id/ll4b2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll4b2" />
+
+        <Button
+            android:id="@+id/ll4b3"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll4b3" />
+
+        <Button
+            android:id="@+id/ll4b4"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll4b4" />
+
+        <Button
+            android:id="@+id/ll4b5"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+
+            android:background="?android:color"
+            android:text="@string/ll4b5" />
+    </LinearLayout>
+
+
+</RelativeLayout>
