@@ -5,25 +5,8 @@
 	<meta 
 	name="viewport" content="width=device-width, initial-scale=1" >
 	<title> Hansraj College - University of Delhi</title>
-	<style type="text/css">
-		th
-		{
-			border: 1px solid black;
-			padding: 3px;
-		}
-		.center
-		{
-			
-			margin-left:auto;
-			margin-right: auto;
-			display: block;
-		}
-		h1
-		{
-			text-align: center;
-			font-size: 50px
-		}
-	</style> 
+	<link rel="stylesheet" type="text/css" href="webcss.css">
+
 </head>
 <body >
 	<span>
@@ -41,10 +24,16 @@
 	
 	<h2 style="text-align: center;">Undergraduate Admissions 2019</h2>
 
-	<p style="margin: 10px"><strong>This form is for the applicants who want to seek admission to Hansraj College for Undergraduate Courses. Fill out the form and proceed with it to complete it's admission process.</strong></p>
-
+	<p style="margin: 10px"><strong>This form is for the applicants who want to seek admission to Hansraj College for Undergraduate Courses. Fill out the form and proceed with it to complete  admission process.</strong></p>
+	<ul>
+		<li><a href="#Personal" >Personal </a></li>
+		<li><a href="#Address">Address</a></li>
+		<li><a href="#Contact">Contact</a></li>
+		<li><a href="#Academic">Academic </a></li>
+	</ul>
+	<div id="details" >
 	<form>
-		<fieldset style="padding:30px ; ">
+		<fieldset id="Personal" style="padding:30px ; ">
 				<legend>Personal Details :</legend>
 			<div>	
 				Name : 
@@ -79,7 +68,7 @@
 				<option>Kashmiri Migrant</option>
 			</select><br><br>
 		</fieldset>
-		<fieldset style="padding: 30px">
+		<fieldset id="Address" style="padding: 30px">
 			<legend>Contact Details : </legend>
 			Mobile Number : 
 			<input type="number" name="mobile" required placeholder="Your Number" maxlength="10" minlength="10"><br><br>
@@ -90,7 +79,7 @@
 	 		Email Id : 
 	 		<input type="Email" name="Email" required placeholder="Enter your Email Address"><br><br>
 		</fieldset>
-		<fieldset style="padding: 30px ">
+		<fieldset id="Contact" style="padding: 30px ">
 			<legend>Address :</legend>
 			Address Line 1:<br>
 			<input type="text" name="line1" style="width: 20%" placeholder="Line 1" required><br><br>
@@ -103,7 +92,7 @@
 			 Zipcode 
 			 <input type="number" name="pincode"  maxLength="6" style="margin-left:  1%" placeholder="Pincode" required><br><br>
 		</fieldset>
-		<fieldset style="padding: 30px">
+		<fieldset id="Academic" style="padding: 30px">
 			<legend>Academic Details : </legend>
 			Highest Qualification 
 			<input type="radio" style="margin-left: 2%" name="Qualification" >Science
@@ -189,6 +178,6 @@
 		Payments Status
 		<input type="submit" name="submit" value="Submit">
 		<input type="reset" name="reset" value="reset">
-	</form>
+	</form></div>
 </body>
 </html>
