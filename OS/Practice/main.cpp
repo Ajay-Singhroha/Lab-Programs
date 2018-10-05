@@ -1,12 +1,14 @@
-#include <iostream>
+//#include <iostream>
+#include <cstdint>
+
 #include "block.h"
 #include "process.h"
 
 using namespace std;
-int findFirstFit(int p_size,int blocks[])
+int findFirstFit(int p_size,int blocks[],int m)
 {
 
-    for(int i=0;i<(sizeof(blocks)/sizeof(blocks[0]));i++)
+    for(int i=0; i<m; i++)
     {
         if(blocks[i]>=p_size)
         {
@@ -16,13 +18,13 @@ int findFirstFit(int p_size,int blocks[])
     return -1;
 }
 
-void firstFit(int Copy[],int copyP[])
+void firstFit(int Copy[],int copyP[],int n,int m)
 {
-    cout<<(sizeof(copyP)/sizeof(copyP[1]));
 
-    for(int i=0;i<3;i++)
+
+    for(int i=0; i<n; i++)
     {
-        int j=findFirstFit(copyP[i],Copy);
+        int j=findFirstFit(copyP[i],Copy,m);
         if(j!=-1)
         {
             Copy[j]-=copyP[i];
@@ -30,6 +32,41 @@ void firstFit(int Copy[],int copyP[])
         }
     }
 }
+
+
+int findBestFit(int p_size,int blocks[],int m)
+{
+    int best=INT_MAX;
+    for(int i=0; i<m; i++)
+    {
+        if(blocks[i]>=p_size)
+        {
+            if(i<best)
+                best=i;
+
+        }
+    }
+    if(best!=-1)
+        return best;
+    return -1;
+}
+
+void bestFit(int Copy[],int copyP[],int n,int m)
+{
+
+
+    for(int i=0; i<n; i++)
+    {
+        int j=findBestFit(copyP[i],Copy,m);
+        if(j!=-1)
+        {
+            Copy[j]-=copyP[i];
+            copyP[i]=0;
+        }
+    }
+}
+
+
 
 
 
@@ -43,14 +80,14 @@ int main()
 
 
     cout<<"\n\n Enter Block Details \n\n";
-    for(int i=0;i<m;i++)
+    for(int i=0; i<m; i++)
     {
         b[i].input();
     }
 
-    int Copy[m]={0};
+    int Copy[m]= {0};
 
-    for(int i=0;i<m;i++)
+    for(int i=0; i<m; i++)
     {
         Copy[i]=b[i].getSize();
     }
@@ -63,25 +100,24 @@ int main()
 
 
     cout<<"\n\n Enter Process Details \n\n";
-    for(int i=0;i<n;i++)
+    for(int i=0; i<n; i++)
     {
-       p[i].input();
+        p[i].input();
     }
 
-    int copyP[n]={0};
+    int copyP[n]= {0};
 
-    for(int i=0;i<n;i++)
+    for(int i=0; i<n; i++)
     {
         copyP[i]=p[i].getPSize();
     }
 
 
-    firstFit(Copy,copyP);
+    bestFit(Copy,copyP,n,m);
 
 
-        for(int i=0;i<n;i++)
-        cout<<" "<<copyP[i];
-        for(int i=0;i<m;i++)
+
+    for(int i=0; i<m; i++)
         cout<<" "<<Copy[i];
 
 

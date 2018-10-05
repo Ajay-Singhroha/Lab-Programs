@@ -12,3 +12,16 @@
 	<cstring>
 	<iostream>
 
+1538722034 source:/home/hrc/Desktop/3209/OS/Practice/main.cpp
+	<iostream>
+	"block.h"
+	"process.h"
+
+1538717975 /home/hrc/Desktop/3209/OS/Practice/block.h
+	<cstring>
+	<iostream>
+
+1538717975 /home/hrc/Desktop/3209/OS/Practice/process.h
+	<cstring>
+	<iostream>
+
