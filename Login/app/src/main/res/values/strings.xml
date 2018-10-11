@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="mainlabel">Create Account</string>
+    <string name="miantv">Welcome</string>
+    <string name="logintv">Already Registered?? Login.</string>
+    <string name="login">Login</string>
+    <string name="registertv">First Time Here?? Register</string>
+    <string name="register">Register</string>
+
+
+    <string name="lmaintv">Enter Your Login Credentials</string>
+    <string name="lusertv">Username</string>
+    <string name="lpasstv">Password</string>
+    <string name="luseret">Enter your username </string>
+    <string name="lpasset">Password here</string>
+    <string name="loginbutton">Enter your Account</string>
+
+    <string name="rmaintv">Fill your Details:</string>
+    <string name="rnametv">Name</string>
+    <string name="rnameet">Enter name here</string>
+    <string name="rrolltv">Roll No</string>
+    <string name="rrollet">College Roll no here</string>
+    <string name="rusertv">Username</string>
+    <string name="ruseret">Enter Username here</string>
+    <string name="rnotv">Mobile No</string>
+    <string name="rnoet">Enter number here</string>
+    <string name="remailtv">Email-Id</string>
+    <string name="remailet">email-id here</string>
+    <string name="rpasstv">Password</string>
+    <string name="rconftv">Confirm Password</string>
+    <string name="rpasset">password here</string>
+    <string name="rconfet">confirm password</string>
+    <string name="registerbutton">Register</string>
+
+
+    <string name="lrtv">You have successfully Registered. Please log in \nwith your  username and password to continue</string>
+    <string name="lwrong">Incorrect Username and Password!</string>
+</resources>

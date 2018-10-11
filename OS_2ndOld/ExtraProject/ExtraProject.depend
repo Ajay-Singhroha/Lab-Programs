@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1536572128 source:/home/hrc/Desktop/3209/OS/ExtraProject/main.cpp
+	<iostream>
+	"Process.cpp"
+	<limits.h>
+	<stdint.h>
+
+1536478550 /home/hrc/Desktop/3209/OS/ExtraProject/Process.cpp
+	<iostream>
+

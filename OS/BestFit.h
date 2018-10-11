@@ -31,6 +31,14 @@ class BestFit
 			}
 		}
 		
+	/*	for(int i=0;i<p;i++)
+		cout<<"   "<<process[i];
+			cout<<"\n\n\n";
+	for(int i=0;i<m;i++)
+		cout<<"   "<<memory[i];
+*/
+	
+		
 		
 	}
 	

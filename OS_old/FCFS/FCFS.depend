@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1533182495 source:/home/hrc/Desktop/3209/OS/FCFS/main.cpp
+	<iostream>
+	<iomanip>
+

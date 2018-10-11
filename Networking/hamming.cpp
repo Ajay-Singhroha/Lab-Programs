@@ -6,7 +6,7 @@
 #include<string>
 using namespace std;
 int parity_check(int codeword[],int size,int i);                                                    // check parity of check bits
-
+void trim(string& s);
 int ret_k(int arr[],int n);                                                                         // give the value of check bits required
 
 int main()
@@ -18,11 +18,20 @@ int main()
 	string s;                                                                                       //  take input in string
 	int array[MAX];
 	cout<<"\n\n\n Enter Information Bits:: ";
-	cin>>s;
+	getline(cin,s);
 
+	cout<<s;
+	cout<<endl;
+	s=trim(s);
+	cout<<s;
 	n=s.length();
 	for(int i=0; i<n; i++)
 	{
+		if(s[i]==' ')
+		{
+	
+			continue;
+		}
 		if(s[i]!=48&&s[i]!=49)                                                                      //  check if valid
 		{
 			cout<<"\n Error ! , Not in Binary .";
@@ -32,10 +41,19 @@ int main()
 
 	for(int i=0; i<n; i++)
 	{
+		if(s[i]==' ')
+		{
+			continue;
+		}
 		array[i]=s[i]-48;                                                                            // convert string to int array
 	}
+	cout<<endl;
+	for(int i=0;i<n;i++)
+	{
+		cout<<" "<<array[i];
+	}
 
-
+/*
 
 	k=ret_k(array,n);                                                                                 // get the no. of check bits in k
 
@@ -132,7 +150,7 @@ int main()
 		cout<<"\n\n Transmission Successfull !\n\n";
 	}
 
-
+*/
 	return 0;
 }
 int ret_k(int array[],int n)
@@ -176,5 +194,21 @@ int parity_check(int codeword[],int size,int i)
 	}
 	return count%2;                                                                              //   return ,"0" or "1" as the parity .
 
+}
+
+void trim(string& s)
+{
+int i=0,j=0;
+string a="";
+	for( i=0;i<s.length();i++)
+	{
+		if(s[i]!=' ')
+		{
+			a[j++]=s[i];
+		}
+		
+	}
+	a[j]='\0';
+	return a;
 }
 

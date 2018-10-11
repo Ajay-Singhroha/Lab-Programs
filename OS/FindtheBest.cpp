@@ -85,13 +85,14 @@ int main()
     	
     	
     	//output(bprocess,p);
-    	//output(bmemory,m);
+    	output(bmemory,m);
 	cout<<"\n\n\n";
 	for(int i=0;i<p;i++)
 		cout<<"   "<<bprocess[i];
 		cout<<"\n\n\n";
-	for(int i=0;i<m;i++)
-		cout<<"   "<<bmemory[i];
+		
+	//	for(int i=0;i<m;i++)
+	//cout<<"   "<<bmemory[i];
 
 }
 

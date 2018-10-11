@@ -25,9 +25,17 @@ class BestFit
 		{
 			int j=giveTheBest(process[i],memory,m);
 			if(j!=-1)
+			{
 				memory[j]-=process[i];
 				process[i]=0;
+			}
 		}
+		
+		for(int i=0;i<p;i++)
+		cout<<"   "<<bprocess[i];
+		cout<<"\n\n\n";
+	for(int i=0;i<m;i++)
+	
 		
 		
 	}

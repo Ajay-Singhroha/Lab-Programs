@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+
+
+
+    <TextView
+        android:id="@+id/remailtv"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="206dp"
+        android:text="@string/remailtv"
+        android:textColor="@color/tvcolor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rusertv"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/rusertv"
+        android:textSize="15sp"
+        android:textColor="@color/tvcolor" />
+
+    <TextView
+        android:id="@+id/rmaintv"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/rmaintv"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/buttoncolor"/>
+
+    <TextView
+        android:id="@+id/rnametv"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:text="@string/rnametv"
+        android:textSize="15sp"
+        android:textColor="@color/tvcolor"/>
+
+    <EditText
+        android:id="@+id/rnameet"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ruseret"
+        android:layout_alignTop="@+id/rnametv"
+        android:layout_marginTop="-16dp"
+        android:ems="10"
+        android:hint="@string/rnameet"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/ruseret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/rusertv"
+        android:layout_marginTop="-18dp"
+        android:ems="10"
+        android:hint="@string/ruseret"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorAccent"  />
+
+    <EditText
+        android:id="@+id/remailet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/remailtv"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="@string/remailet"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/rnotv"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="222dp"
+        android:text="@string/rnotv"
+        android:textColor="@color/tvcolor"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/rnoet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rnotv"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="@string/rnoet"
+        android:inputType="phone"
+        android:textColorHint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/rpasstv"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="172dp"
+        android:text="@string/rpasstv"
+        android:textColor="@color/tvcolor"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/rconftv"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="119dp"
+        android:text="@string/rconftv"
+        android:textColor="@color/tvcolor"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/rrolltv"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:text="@string/rrolltv"
+        android:textColor="@color/tvcolor"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/rrollet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rrolltv"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/rrollet"
+        android:textColorHint="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:textColor="@color/buttoncolor"
+        android:backgroundTintMode="src_over"
+        android:text="@string/registerbutton" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rpasset1"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/rpasstv"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginStart="109dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/rpasset"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/rpasset"
+            android:textColorHint="@color/colorAccent"
+            android:hint="@string/rpasset"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rconfet1"
+        android:layout_width="211dp"
+        android:layout_height="44dp"
+        android:layout_alignBottom="@+id/rconftv"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/colorAccent"
+
+        android:layout_marginStart="109dp"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/rconfet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/rpasset"
+            android:hint="@string/rconfet"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

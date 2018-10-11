@@ -1,0 +1,169 @@
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="a college admission form">
+    <meta name="author" content="himanshu dewan">
+    <title>College admission form</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/SmartWizard/src/js/jquery.smartWizard.js"></script>
+    
+    
+
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/SmartWizard/src/css/smart_wizard.css" rel="stylesheet">
+
+    <link href="fort.css" rel="stylesheet">
+    <script src="fort.js" ></script>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+    <script src="validator/js/validator.js"></script>
+
+  <link href="style.css" rel="stylesheet" >
+
+
+
+
+    </head>
+
+    <body>
+        <div  id='form'  class="form">
+            <img id='du_logo' src='University_of_Delhi.png'  />
+            <p class="lead" style="display:inline; border-bottom: 2px solid black;" >
+                        Ordinature Admission Form
+            </p>
+
+            <div id="smartwizard" class="">
+                <ul>
+                    <li><a href="#step-1">Register<br/><small>Register with Portal</small></a></li>
+                    <li><a href="#step-2">Personal Information<br /><small>Enter your info</small></a></li>
+                    <li><a href="#step-3">Academic Information<br /><small>Transcripts</small></a></li>
+                    <li><a href="#step-4">Finish<br /><small>Hurray!!</small></a></li>
+                </ul>
+            
+                <div>
+                    <div id="step-1" class="">
+                        <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address registered with Ordinature</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                              <div class="valid-feedback">
+                                Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Not a valid Email !! Don't Trick Us 
+                                </div>
+                                    
+                                    
+
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                            </div>
+                           
+                        
+                     </div>
+                    <div id="step-2" class="">
+                             <form>
+                                    <div class="form-group">
+                                      <label for="Name">Name</label>
+                                      <input type="text" class="form-control" id="Name"  placeholder="Enter Name" required>
+                                     </div>
+                                     <div class="valid-feedback">
+                                             Good Name. I like it!
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                 Looks bad!
+                                            </div>
+
+                                     <div class="form-group">
+                                            <label for="Father">Father's Name</label>
+                                            <input type="text" class="form-control" id="Father"  placeholder="Enter Father's Name" required>
+                                     </div>
+
+                                     <div class="form-group">
+                                            <label for="Mother">Mother's Name</label>
+                                            <input type="text" class="form-control" id="Mother"  placeholder="Enter Mother's Name" required>
+                                     </div>
+
+                                     <div class="form-group">
+                                            <label >Date Of Birth</label>
+                                            <input type="text" class="datepicker">
+                                    </div>
+                                    <div class="form-group">
+                                        <span>Gender:</span>
+                                    <p>
+                                            <label>
+                                              <input class="with-gap" name="group3" type="radio" checked />
+                                              <span>Male</span>
+                                            </label>
+                                            <label>
+                                                    <input class="with-gap" name="group3" type="radio" checked />
+                                                    <span>Female</span>
+                                                  </label>
+                                          </p>
+                                    </div>
+                              
+                        
+                    </div>
+                    <div id="step-3" class="">
+                         <form>
+                            <span>Class 10th Marksheet</span>
+                            <input type='file' required/><br/>
+                            <span>Class 12th Marksheet</span>
+                            <input type='file' required/>
+
+                         
+                    </div>
+                    <div id="step-4" class="">
+                     <div class='display-4'>
+                        Hurray!!! You Have Reached the End of Form
+                     </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+                 
+            
+       
+    </div>
+  
+    <script>
+      //  Fort.flash("#009DFF", "#000", "#6638F0");
+      Fort.sections("#009DFF", "#4AF2A1", "#FB5229")
+    </script>
+    <script type="text/javascript">
+         $(document).ready(function(){
+        
+        $('#smartwizard').smartWizard({
+            transitionEffect : 'slide'
+        });
+    
+    });
+       
+     
+    $(document).ready(function(){
+    $('.datepicker').datepicker({
+        yearRange:50
+    });
+  });
+  
+
+ 
+
+        </script>
+     </body>
+
+</html>
